@@ -79,7 +79,7 @@
 						specularColor="0.5 0.5 0.5">
 						
 					</Material>
-					<ImageTexture url='"assets/images/fantaLabel.jpg"' />
+					<ImageTexture url='"maps/fantaLabel.jpg"' />
 					
 				</Appearance>
 				<IndexedFaceSet

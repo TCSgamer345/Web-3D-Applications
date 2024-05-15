@@ -35,7 +35,30 @@ function resetPosition(modelId) {
     }
 }
 
+function swapView(page, view) {
+    let modelInline;
+    
+    switch (page) {
+        case 'coke':
+            modelInline = document.querySelector('#cokewire inline');
+            break;
+        case 'sprite':
+            modelInline = document.querySelector('#spritewire inline');
+            break;
+        case 'fanta':
+            modelInline = document.querySelector('#fantawire inline');
+            break;
+        default:
+            console.error('Invalid page specified');
+            return;
+    }
 
+    if (view === 'can') {
+        modelInline.setAttribute('url', `assets/models/${page}Can.x3d`);
+    } else if (view === 'bottle') {
+        modelInline.setAttribute('url', `assets/models/${page}Bottle.x3d`);
+    }
+}
 
 function stopRotation(modelId) {
     const axes = ['X', 'Y', 'Z'];
@@ -74,13 +97,7 @@ function rotateZ(modelId) {
 }
 
 
-function animateModel()
-{
-    if(document.getElementById('model__RotationTimer').getAttribute('enabled')!= 'true')
-        document.getElementById('model__RotationTimer').setAttribute('enabled', 'true');
-    else
-        document.getElementById('model__RotationTimer').setAttribute('enabled', 'false');
-}
+
 function wireFrame(modelId)
 {
     var ElementId = modelId + 'wire';

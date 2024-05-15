@@ -12,7 +12,15 @@
     font-family: Crillee;
     src: url(../assets/fonts/Crillee.ttf);
 }
-
+.font-jabberwub {
+    font-family: Jabberwub;
+}
+.font-cocaColaFont {
+    font-family: cocaColaFont;
+}
+.font-Crillee {
+    font-family: Crillee;
+}
 
 
 .content {
@@ -89,7 +97,7 @@ h6 {
 
 /* CSS rules for the main_text IDs */
 #main_3d_image {
-    background-image: url(../assets/images/BackgroundImages/main_3D_variant2.jpg);
+    background-image: url(../assets/images/HomePageImages/main_3D_variant2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100% !important;
@@ -135,10 +143,70 @@ h6 {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgb(224, 232, 235)
+    
+    
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distorting */
+}
+
+
+#expand-card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+}
+
+#expand-card .card-body {
+    flex: 1;
+    
+}
+
+#expand-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#card-coke {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make the cards take up the full height of their container */
+    
+}
+
+#card-sprite {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make the cards take up the full height of their container */
+   
+}
+
+#card-fanta {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make the cards take up the full height of their container */
+    
+}
+
+
+.card-img-top  {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: 350px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+.carousel-inner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 .card-text {
-    font-size: 13px;
+    font-size: 15px;
 
 }
 
@@ -190,66 +258,44 @@ h6 {
     padding-left: 3px;
 }
 
-/* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
-    */
 
-/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
-    */
 .navbar_coca_cola {
-    background-color: rgb(165, 52, 52);
+    background-color: red;
     border-width: 0px;
     min-height: 70px;
 }
 
-/* CSS rule to overwrite the navbar-brand font color
-    */
+
 .navbar_coca_cola .navbar-brand {
-    color: rgb(245, 235, 235);
+    color: white;
 }
 
-/* CSS rule to overwrite the navbar-brand font hover color
-    */
+
 .navbar_coca_cola .navbar-brand:hover {
     color: black;
 }
 
-/* NAVIGATION MENU
-    */
 
-/* CSS rules to overwrite the position of the Bootstrap menu These are derived from the Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Buttons shows how to do this using Bootstrap 3, the principle should be the same: https://www.youtube.com/watch?v=7v2yC3GyDHU  
-
-    There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
-    */
 .navbar_coca_cola .navbar-nav>li>a {
     color: white;
 }
 
 
-/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
-    */
-
-/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
-    */
 .navbar_coca_cola .navbar-nav>li>a:hover,
 .navbar_coca_cola .navbar-nav>li>a:focus {
     color: black;
 }
 
-/* These next two CSS rules control the style of the icon bar */
 .navbar_coca_cola .navbar-toggler {
-    border-color: white;
+    border-color: black;
 }
 
-.navbar_coca_cola .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+
 
 .navbar_coca_cola .navbar-toggler {
     outline: none !important;
 }
 
-/* Let's style the dropdown menu
-    */
 
 .dropdown-menu {
     text-align: -webkit-left;
@@ -337,19 +383,18 @@ h6 {
     background-color: silver;
 }
 
-/* CSS rule to style the footer */
+
 .footer {
-    color: white;
+    color: black;
     background-color: black;
-    /* Set navbar footer background color same as header */
-    height: 50px;
+    height: 30px;
 }
 
 .navbar-text>a {
     font-size: 10px;
 }
 
-.navbar-text>p {
+footer .navbar-text>p {
     color: rgb(255, 255, 255);
     font-size: 14px;
     text-decoration: none;
@@ -367,34 +412,34 @@ h6 {
 
 .fa-twitter-square:before {
     content: "\f081";
-    color: green;
-    font-size: 1em;
+    color: white;
+    font-size: 2em;
 }
 
 .fa-github-square:before {
     content: "\f092";
-    color: yellow;
-    font-size: 1em;
+    color: white;
+    font-size: 2em;
 }
 
 .fa-google-plus-square:before {
     content: "\f0d4";
-    color: blue;
-    font-size: 1em;
+    color: white;
+    font-size: 2em;
 }
 
 .fa-facebook-square:before {
     content: "\f082";
-    color: red;
-    font-size: 1em;
+    color: white;
+    font-size: 2em;
 }
+
 
 /* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-    color: #760003;
-    /* Font color for active font */
-    background-color: #3399ff;
+    color: #ffffff;
+    
     /* Blue color for background */
     border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -445,16 +490,7 @@ h6 {
     white-space: normal !important;
 }
 
-.img-thumbnail {
-    padding: 0.25rem;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
-}
+
 
 .gallery .img-thumbnail {
     background-color: rgba(255, 255, 255, 0.0);
@@ -507,7 +543,7 @@ x3d {
 .bgImage .bgFanta {
     position: absolute;
     z-index: -1;
-    background-image: url(../assets/images/fanta_background.jpg);
+    background-image: url(../assets/images/ModelPageImages/fanta_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4;
@@ -520,7 +556,7 @@ x3d {
 .bgImage .bgCoke {
     position: absolute;
     z-index: -1;
-    background-image: url(../assets/images/coca-cola-background.png);
+    background-image: url(../assets/images/ModelPageImages/coca-cola-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4;
@@ -533,7 +569,7 @@ x3d {
 .bgImage .bgSprite {
     position: absolute;
     z-index: -1;
-    background-image: url(../assets/images/Sprite-Background.png);
+    background-image: url(../assets/images/ModelPageImages/Sprite-Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4;
@@ -569,70 +605,13 @@ x3d {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(202, 181, 181);
+    
     }
 
-    .navbar_coca_cola {
-        min-height: 90px;
-    }
-
-    /* CSS rule to overwrite the navbar-brand font color
-    */
-    .navbar_coca_cola .navbar-brand {
-        color: rgb(245, 235, 235);
-    }
-
-    /* CSS rule to overwrite the navbar-brand font hover color
-    */
-    .navbar_coca_cola .navbar-brand:hover {
-        color: black;
-    }
-
-
-    .navbar_coca_cola .navbar-nav>li>a {
-        color: white;
-    }
-
-    .navbar_coca_cola .navbar-nav>li>a:hover,
-    .navbar_coca_cola .navbar-nav>li>a:focus {
-        color: black;
-    }
-
-    .navbar_coca_cola .navbar-nav .nav-item {
-        margin-top: 0px;
-    }
-
-    .navbar_coca_cola .navbar-nav .nav-item>,
-    .navbar_coca_cola .navbar-nav>.active>a:hover,
-    .navbar_coca_cola .navbar-nav>.active>a:focus {
-        color: #000000;
-        /* Font color for active font */
-
-
-
-    }
-
-    .navbar_coca_cola .navbar-nav>li>a:hover,
-    .navbar_coca_cola .navbar-nav>li>a:focus {
-        color: black;
-    }
-
-    /* These next two CSS rules control the style of the icon bar */
-    .navbar_coca_cola .navbar-toggler {
-        border-color: white;
-    }
-
-    .navbar_coca_cola .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 255, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-
-    .navbar_coca_cola .navbar-toggler {
-        outline: none !important;
-    }
-
+  
     /* CSS rule to style the footer */
     .footer {
-        background-color: grey;
+        background-color: black;
         height: 60px;
     }
 
@@ -684,7 +663,7 @@ x3d {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(218, 216, 148);
+        
     }
 
     #main_text {
@@ -761,7 +740,7 @@ x3d {
 
     /* CSS rule to style the footer */
     .footer {
-        background-color: #b890b1;
+        background-color: #000000;
         height: 60px;
     }
 
@@ -844,7 +823,7 @@ x3d {
         /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: rgb(185, 185, 178);
+       
     }
 
    

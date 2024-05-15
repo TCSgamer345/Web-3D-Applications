@@ -81,7 +81,7 @@
 						specularColor="0.5 0.5 0.5">
 						
 					</Material>
-					<ImageTexture url='"assets/images/cokeLabel.jpg"'/>
+					<ImageTexture url='"maps/cokeLabel.jpg"'/>
 				</Appearance>
 				<IndexedFaceSet
 					solid="false"
